@@ -1,6 +1,5 @@
 var a = 6;
 var b = 8;
-var c = a % b
 
 if (a > b){
   console.log(`O maior numero entre ${a} e ${b} é ${a}`)
