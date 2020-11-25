@@ -1,0 +1,32 @@
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+
+article section span {
+    font-style: italic;
+}
+
+.curiosity img {
+    height: 150px;
+}
+
+.curiosity article {
+    background-color: #ffe2e2;
+    width: 900px;
+    min-height: 160px;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: left;
+}
+
+.curiosity img {
+    float: left;
+    margin-right: 10px;
+}
+
+.curiosity p {
+    display: inline;
+}
