@@ -5,4 +5,6 @@ for (index in numbers){
   somaNumerosArray += numbers[index]
 }
 
+let mediaAritrimetrica = 
+
 console.log(somaNumerosArray)
