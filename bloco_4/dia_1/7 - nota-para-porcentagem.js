@@ -16,6 +16,12 @@ if (0 <= nota && nota < 50){
   console.log('A nota esta acima 100 ou abaixo de 0; portanto, fora do range permitido')
 }
 
+switch (nota){
+  case (nota == -1):
+    console.log("Pode")
+    break
+}
+
 /*
 Porcentagem >= 90 -> A
 Porcentagem >= 80 -> B
