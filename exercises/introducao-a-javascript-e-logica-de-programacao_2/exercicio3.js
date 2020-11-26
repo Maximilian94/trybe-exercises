@@ -5,6 +5,6 @@ for (index in numbers){
   somaNumerosArray += numbers[index]
 }
 
-let mediaAritrimetrica = 
+let mediaAritrimetrica = somaNumerosArray/numbers.length
 
-console.log(somaNumerosArray)
+console.log(mediaAritrimetrica)
