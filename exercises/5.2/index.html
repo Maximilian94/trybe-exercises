@@ -57,7 +57,73 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      //Passo 1
+      var elementTitle = document.createElement('h1');
+      elementTitle.textContent = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(elementTitle);
+      //Passo 2
+      var div1 = document.createElement('div');
+      div1.className = 'main-content';
+      document.body.appendChild(div1);
+      //Passo 3
+      let div2 = document.createElement('div');
+      div2.className = 'center-content';
+      div1.appendChild(div2);
+      //Passo 4
+      let paragraf = document.createElement('p');
+      paragraf.textContent = 'Algum texto';
+      div2.appendChild(paragraf);
+      //Passo 5
+      let div3 = document.createElement('div');
+      div3.className = 'left-content';
+      div1.appendChild(div3)
+      //Passo 6
+      let div4 = document.createElement('div');
+      div4.className = 'right-content';
+      div1.appendChild(div4);
+      //Passo 7
+      let image = document.createElement('img');
+      image.src = 'https://picsum.photos/200';
+      image.className = 'small-image';
+      div3.appendChild(image);
+      //Passo 8
+      let list = document.createElement('ul');
+      div4.appendChild(list);
+      for (let ciclos = 1; ciclos <= 10; ciclos += 1) {
+        let linha = document.createElement('li');
+        linha.textContent = ciclos;
+        list.appendChild(linha);
+      }
+      //Passo 9
+      for (let ciclos = 1; ciclos <= 3; ciclos += 1) {
+        let titleH3 = document.createElement('h3');
+        titleH3.textContent = `Este é o H3 de número ${ciclos}`;
+        div1.appendChild(titleH3);
+      }
+
+
+      //Segunda parte do exercicio
+      //Passo 1
+      elementTitle.classList = 'title'
+      //Passo 2
+      let elementosh3 = document.querySelectorAll('div > h3');
+      for (let index in elementosh3) {
+        elementosh3[index].className = 'description';
+      };
+      //Passo 3
+      let divToRemove = document.querySelector('div .left-content')
+      console.log(divToRemove);
+      div1.removeChild(divToRemove);
+      //Passo 4
+      div4.style.margin = 'auto';
+      //Passo 5
+      div2.style.backgroundColor = 'green';
+      //Passo 6
+      for (let ciclos = 1; ciclos <= 2; ciclos += 1) {
+        let lastChild = list.lastChild
+        console.log(lastChild)
+        list.removeChild(lastChild)
+      }
     </script>
   </body>
 </html>
